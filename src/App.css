@@ -12,39 +12,3 @@
   grid-template-columns: 2fr 10fr;
   /*grid-gap: 10px;*/
 }
-
-.header {
-  grid-area: h;
-  background-color: aqua;
-}
-
-.header img {
-  width: 100px;
-  height: 50px;
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  grid-area: n;
-  background-color: aquamarine;
-}
-
-.menu {
-  background-color: steelblue;
-  margin: 10px 20%;
-  text-align: center;
-  border-radius: 10px;
-  border: blue solid 1px;
-  transition: background-color 1s;
-}
-
-.menu:hover {
-background-color: deepskyblue;
-}
-
-.content {
-  grid-area: c;
-  background-color: aliceblue;
-}
