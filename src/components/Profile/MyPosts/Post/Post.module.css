@@ -1,0 +1,12 @@
+.post {
+    border-radius: 7px;
+    text-align: center;
+    vertical-align: center;
+    border: gray solid 1px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.post img {
+    width: 30px;
+}

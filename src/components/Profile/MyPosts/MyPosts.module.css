@@ -1,0 +1,10 @@
+.allPosts {
+    border-radius: 5px;
+    border: black double 3px;
+    margin: 10px 10px;
+}
+
+.input {
+    margin: 5px;
+    width: 90%;
+}
