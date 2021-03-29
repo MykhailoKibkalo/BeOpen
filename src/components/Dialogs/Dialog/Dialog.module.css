@@ -1,0 +1,17 @@
+.dialog {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: azure;
+    text-align: center;
+    border: blue solid 1px;
+    transition: background-color 1s;
+    text-decoration: none;
+    color: black;
+}
+
+.dialog:hover {
+    background-color: lightblue;
+}
