@@ -3,11 +3,13 @@ import postStyle from './Post.module.css';
 import testAvatar from '../../../../logo/favicon1.png';
 
 const Post = (props) => {
-    const {message} = props;
+    const {message, likes} = props;
     return (
         <div className={postStyle.post}>
             <img src={testAvatar} alt='avatar'/>
-            <span> Hello, my name is {message} </span>
+            <span> {message} </span>
+            <span> Likes: {likes} </span>
+
         </div>
     )
 }
