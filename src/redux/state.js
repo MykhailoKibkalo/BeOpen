@@ -27,16 +27,23 @@ export let state = {
             {message:'Today at 3 p.m.', id:'4', likes: '4'},
             {message:'How do you do?', id:'5', likes: '9'},
             {message:'Sorry, i will tell you latter', id:'6', likes: '3'}
-        ]
+        ],
+        newPostText: ''
     }
 }
 
-export let addPost = (postMessage) => {
+export let addPost = () => {
     let newPost = {
         id: '5',
-        message: postMessage,
+        message: state.profile.newPostText,
         likes: '12'
     }
     state.profile.postsData.push(newPost);
+    state.profile.newPostText = '';
+    rerenderEntireTree(state);
+}
+
+export let updateNewPostText = (postText) => {
+    state.profile.newPostText = postText;
     rerenderEntireTree(state);
 }

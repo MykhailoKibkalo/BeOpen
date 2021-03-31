@@ -10,8 +10,8 @@ import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 
 const App = (props) => {
-    const {state, addPost} = props;
-    const {dialogs:{dialogsData, messageData}, profile:{postsData}} = state;
+    const {state, addPost, updateNewPostText} = props;
+    const {dialogs:{dialogsData, messageData}, profile:{postsData, newPostText}} = state;
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
@@ -19,7 +19,9 @@ const App = (props) => {
                 <NavBar/>
                 <div className='app-wrapper-content'>
                     <Route path='/profile' render={() => <Profile postsData={postsData}
-                                                                  addPost={addPost} />}/>
+                                                                  addPost={addPost}
+                                                                  newPostText={newPostText}
+                                                                  updateNewPostText={updateNewPostText} />}/>
                     <Route path='/dialogs' render={() => <Dialogs dialogsData={dialogsData}
                                                                   messageData={messageData}/>}/>
                     <Route path='/news' render={() => <News/>}/>
